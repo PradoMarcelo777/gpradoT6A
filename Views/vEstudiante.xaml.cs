@@ -7,7 +7,7 @@ namespace gpradoT6A.Views;
 
 public partial class vEstudiante : ContentPage
 {
-    private const string Url = "http://localhost:8081/uisraelws/estudiante.php";
+    private const string Url = "http://192.168.100.35:8081/uisraelws/estudiante.php";
     private readonly HttpClient cliente = new HttpClient();
 
     //la lista en la interfaz de usuario se actualizara automaticamente cuando se agregue o elimines un estudiante.
