@@ -10,7 +10,7 @@ public partial class vEstudiante : ContentPage
     private const string Url = "http://localhost:8081/uisraelws/estudiante.php";
     private readonly HttpClient cliente = new HttpClient();
 
-    //la lista en la interfaz de usuario se actualizará automáticamente cuando se agregue o elimines un estudiante.
+    //la lista en la interfaz de usuario se actualizara automaticamente cuando se agregue o elimines un estudiante.
     private ObservableCollection<Estudiante> todosLosEstudiantes;
 
     public vEstudiante()
@@ -26,7 +26,7 @@ public partial class vEstudiante : ContentPage
         List<Estudiante> mostrarEstudiantes = JsonConvert.DeserializeObject<List<Estudiante>>(datosEstudiantesJson); // Deserializa el JSON a una lista de estudiantes
         //Console.WriteLine(mostrarEstudiantes);
         todosLosEstudiantes = new ObservableCollection<Estudiante>(mostrarEstudiantes); // Convierte la lista en ObservableCollection
-        listaEstudiantes.ItemsSource = todosLosEstudiantes; // Asigna la colección a la fuente de datos de la lista en la UI
+        listaEstudiantes.ItemsSource = todosLosEstudiantes; // Asigna la coleccion a la fuente de datos de la lista en la UI
 
     }
 }
