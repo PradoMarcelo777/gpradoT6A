@@ -22,12 +22,13 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-
-                    <Label Text="Nombre" Grid.Column="0" HorizontalOptions="Center" FontAttributes="Bold"/>
-                    <Label Text="Apellido" Grid.Column="1" HorizontalOptions="Center" FontAttributes="Bold"/>
-                    <Label Text="Edad" Grid.Column="2" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label Text="Codigo" Grid.Column="0" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label Text="Nombre" Grid.Column="1" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label Text="Apellido" Grid.Column="2" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label Text="Edad" Grid.Column="3" HorizontalOptions="Center" FontAttributes="Bold"/>
                 </Grid>
             </ListView.Header>
 
@@ -40,11 +41,13 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
-                            <Label Text="{Binding Nombre}" Grid.Column="0" HorizontalOptions="Center" />
-                            <Label Text="{Binding Apellido}" Grid.Column="1" HorizontalOptions="Center" />
-                            <Label Text="{Binding edad}" Grid.Column="2" HorizontalOptions="Center" />
+                            <Label Text="{Binding Id}" Grid.Column="0" HorizontalOptions="Center" />
+                            <Label Text="{Binding Nombre}" Grid.Column="1" HorizontalOptions="Center" />
+                            <Label Text="{Binding Apellido}" Grid.Column="2" HorizontalOptions="Center" />
+                            <Label Text="{Binding edad}" Grid.Column="3" HorizontalOptions="Center" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
